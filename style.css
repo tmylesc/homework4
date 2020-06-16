@@ -1,0 +1,39 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: lightblue;
+    margin: 1rem 25% 1rem 25%;
+    padding: 1rem;
+}
+
+#quizBox {
+    align-content: center;
+    text-align: center;
+    margin: 0 10% 0 10%;
+}
+
+#scoresBtn {
+    display: inline;
+    margin: 1rem;
+}
+
+#timer {
+    float: right;
+    margin: 1rem;
+}
+
+label,
+input,
+button {
+    margin: 1rem;
+}
+
+#highScores {
+    align-content: center;
+    text-align: center;
+    margin: 0 10% 0 10%;
+}

@@ -6,6 +6,7 @@ var currentQuestion = document.querySelector("#currentQuestion");
 var questionNum = document.querySelector("#questionNum");
 var choiceList = document.querySelector("#choiceList");
 var correctAnswer = document.querySelector("#correctAnswer");
+var scoresBtn = document.querySelector("#scoresBtn");
 
 var score = 0;
 var questionIndex = 0;
@@ -58,7 +59,7 @@ startBtn.addEventListener("click", function() {
         secondsLeft -= 1;
     }, 1000);
 
-    // startBtn.remove();
+    startBtn.remove();
 
     //Loads questions
     loadQuestion(questionIndex);
@@ -170,10 +171,6 @@ function checkAnswer(event) {
 
 }
 
-
-//High Score variables
-var highScores = document.querySelector("#highScores");
-var listOfScores = document.querySelector("#listOfScores");
-var backBtn = document.querySelector("#backBtn");
-var clearBtn = document.querySelector("#clearBtn");
-
+scoresBtn.addEventListener("click", function () {
+    window.location.replace("high-scores.html");
+})
