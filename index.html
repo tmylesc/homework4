@@ -17,14 +17,15 @@
     <!-- The top row contains a link to see a high scores list and the quiz timer -->
     <div id="topRow">
         <button id="scoresBtn">View High Scores</button>
-        <div id="timer">Time: 0</div>
+        <div id="timer">Time: 75</div>
     </div>
 
     <!-- The Quiz Box has a button to start the quiz and will contain the questions and answer choices for the quiz -->
     <div id="quizBox">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <h1 id="questionNum">Coding Quiz Challenge</h1>
+        <p id="currentQuestion">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
         <ul id="choiceList"></ul>
+        <div id="correctAnswer"></div>
         <button id="startQuiz">Start Quiz</button>
     </div>
 
